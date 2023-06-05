@@ -1,0 +1,12 @@
+body {
+    background-color: ghostwhite;
+}
+
+.dropdown-menu{
+    background-color: rgba(231, 246, 250, 0.548);
+    border: none;
+}
+
+.dropdown-item:hover{
+    background-color: lightgreen;
+}
