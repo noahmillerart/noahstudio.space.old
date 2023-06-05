@@ -3,13 +3,16 @@ body {
 }
 
 .dropdown-menu{
-    background-color: rgba(231, 246, 250, 0.548);
+    background-color: rgba(241, 231, 250, 0.603);
     border: none;
 }
 .navbar a:hover {
     color: rebeccapurple;
 }
 
+.dropdown-menu a:hover{
+    color: white;
+}
 .dropdown-item:hover{
-    background-color: lightgreen;
+    background-color: mediumpurple;
 }
