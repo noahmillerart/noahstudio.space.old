@@ -6,6 +6,9 @@ body {
     background-color: rgba(231, 246, 250, 0.548);
     border: none;
 }
+.navbar a:hover {
+    color: rebeccapurple;
+}
 
 .dropdown-item:hover{
     background-color: lightgreen;
