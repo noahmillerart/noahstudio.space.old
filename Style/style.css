@@ -3,7 +3,7 @@ body {
 }
 
 .dropdown-menu{
-    background-color: rgba(241, 231, 250, 0.603);
+    background-color: rgba(241, 231, 250, 0.952);
     border: none;
 }
 .navbar a:hover {
@@ -15,4 +15,8 @@ body {
 }
 .dropdown-item:hover{
     background-color: mediumpurple;
+}
+
+#footer{
+    background: linear-gradient(to bottom, #F0FFFF, #FFFAF0);
 }
