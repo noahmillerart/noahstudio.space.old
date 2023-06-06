@@ -40,7 +40,21 @@ body {
 #contact ul li{
     display: inline-block;
 }
-
+#contact button{
+    background-color: #58127f;
+    border: none;
+}
+#contact button:hover{
+    background-color: #7a1081;
+}
+#contact img{
+    width: 25px;
+    height: 25px;
+    opacity: 0.7;
+}
+#contact img:hover{
+    opacity: 1;
+}
 
 /** Footer **/
 #footer{
