@@ -9,7 +9,6 @@ body {
 .navbar a:hover {
     color: rebeccapurple;
 }
-
 .dropdown-menu a:hover{
     color: white;
 }
@@ -17,6 +16,36 @@ body {
     background-color: mediumpurple;
 }
 
+
+/** Footer **/
 #footer{
-    background: linear-gradient(to bottom, #F0FFFF, #FFFAF0);
+    background: linear-gradient(to bottom, #7a1081, #58127f);
+}
+#footer h6{
+    color: white;
+    font-size: small;
+}
+#footer ul{
+    list-style: none;
+    padding: 0%;
+}
+#footer ul li{
+    display: inline-block;
+}
+#footer a:link, #footer a:visited{
+    text-decoration: none;
+    font-size: smaller;
+    color: white;
+    opacity: 0.3;
+}
+#footer a:hover{
+    color: white;
+    opacity: 1;
+}
+#footer img:hover{
+    opacity: 1;
+}
+#socialmedia img{
+    width: 25px;
+    height: 25px;
 }
