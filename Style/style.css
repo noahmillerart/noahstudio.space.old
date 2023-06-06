@@ -32,6 +32,12 @@ body {
     text-align: left;
 }
 
+/** Contact **/
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
 
 /** Footer **/
 #footer{
