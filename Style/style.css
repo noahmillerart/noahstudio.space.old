@@ -2,6 +2,7 @@ body {
     background-color: ghostwhite;
 }
 
+/** Navbar **/
 .dropdown-menu{
     background-color: rgba(241, 231, 250, 0.952);
     border: none;
@@ -14,6 +15,20 @@ body {
 }
 .dropdown-item:hover{
     background-color: mediumpurple;
+}
+
+/** About **/
+#testimonials img {
+    border-radius: 50%;
+}
+#clients img{
+    padding: 5%;
+}
+#bio {
+    text-align: justify;
+}
+#bio h1{
+    text-align: left;
 }
 
 
