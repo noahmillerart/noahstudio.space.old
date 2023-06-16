@@ -18,24 +18,24 @@
     <div class="footer"></div>
 
     <script>
-      // script.js
-function loadCommonElement(elementClass, filePath) {
-    fetch(filePath)
-      .then(response => response.text())
-      .then(data => {
-        const elements = document.getElementsByClassName(elementClass);
-        for (let i = 0; i < elements.length; i++) {
-          elements[i].innerHTML = data;
+      function loadCommonElement(elementClass, filePath) {
+          fetch(filePath)
+            .then(response => response.text())
+            .then(data => {
+              const elements = document.getElementsByClassName(elementClass);
+              for (let i = 0; i < elements.length; i++) {
+                elements[i].innerHTML = data;
+              }
+            })
+            .catch(error => {
+              console.error(`Error loading ${filePath}:`, error);
+            });
         }
-      })
-      .catch(error => {
-        console.error(`Error loading ${filePath}:`, error);
-      });
-  }
-  
-  loadCommonElement('header', 'template/header.html');
-  loadCommonElement('footer', 'template/footer.html');
+        
+        loadCommonElement('header', 'template/header.html');
+        loadCommonElement('footer', 'template/footer.html');
     </script>
+    
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
