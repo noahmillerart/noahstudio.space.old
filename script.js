@@ -13,5 +13,5 @@ function loadCommonElement(elementClass, filePath) {
       });
   }
   
-  loadCommonElement('header', 'header.html');
-  loadCommonElement('footer', 'footer.html');  
+  loadCommonElement('header', 'template/header.html');
+  loadCommonElement('footer', 'template/footer.html');  
