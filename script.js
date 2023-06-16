@@ -1,6 +1,6 @@
 // script.js
-fetch('test.html')
+fetch('template/header.html')
   .then(response => response.text())
   .then(data => {
-    document.getElementById('test').innerHTML = data;
+    document.getElementById('header').innerHTML = data;
   });
