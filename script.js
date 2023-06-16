@@ -10,7 +10,7 @@ fetch('template/footer.html')
     document.getElementById('footer').innerHTML = data;
 });
 
-fetch('template/header.html')
+fetch('../template/header.html')
   .then(response => response.text())
   .then(data => {
     document.getElementById('header2').innerHTML = data;
