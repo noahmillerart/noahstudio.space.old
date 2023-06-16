@@ -1,23 +1,17 @@
-fetch('template/header.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('header').innerHTML = data;
-});
-
-fetch('template/footer.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('footer').innerHTML = data;
-});
-
-fetch('../template/header.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('header2').innerHTML = data;
-});
-
-fetch('../template/footer.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('footer2').innerHTML = data;
-});
+// script.js
+function loadCommonElement(elementClass, filePath) {
+    fetch(filePath)
+      .then(response => response.text())
+      .then(data => {
+        const elements = document.getElementsByClassName(elementClass);
+        for (let i = 0; i < elements.length; i++) {
+          elements[i].innerHTML = data;
+        }
+      })
+      .catch(error => {
+        console.error(`Error loading ${filePath}:`, error);
+      });
+  }
+  
+  loadCommonElement('header', 'header.html');
+  loadCommonElement('footer', 'footer.html');  
