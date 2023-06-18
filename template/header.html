@@ -1,16 +1,3 @@
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var currentPage = window.location.pathname;
-
-    var menuItems = document.querySelectorAll('.navbar-nav a');
-    menuItems.forEach(function(item) {
-      var itemPath = item.getAttribute('href');
-      if (itemPath === currentPage) {
-        item.classList.add('active');
-      }
-    });
-  });
-</script>
 <div class="container text-center p-5"><!--Header-->
 
   <a href="../"><img src="../img/main/LogoNS_small_color.png" alt="Logo" class="img-fluid"></a>
@@ -25,15 +12,15 @@
               <li class="nav-item">
                 <a class="nav-link" href="../about/">About</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/illustration/">Illustration</a></li>
-                  <li><a class="dropdown-item" href="/animation/">Animation</a></li>
-                  <li><a class="dropdown-item" href="/design/">Design</a></li>
-                  <li><a class="dropdown-item" href="/technical/">Technical Drawing</a></li>
-                </ul>
-              </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/illustration/">Illustration</a></li>
+                        <li><a class="dropdown-item" href="/animation/">Animation</a></li>
+                        <li><a class="dropdown-item" href="/design/">Design</a></li>
+                        <li><a class="dropdown-item" href="/technical/">Technical Drawing</a></li>
+                    </ul>
+                </li>
               <li class="nav-item">
                 <a class="nav-link" href="/contact/" id="contact-link">Contact</a>
               </li>
