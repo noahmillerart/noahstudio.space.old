@@ -9,20 +9,15 @@
     <link href="../style/style.css" rel="stylesheet">
 
     <script>
-      function changeContent() {
-        // Array of item IDs
-        var itemIds = ['item1', 'item2', 'item3', /* ... add more item IDs ... */];
-  
-        itemIds.forEach(function(itemId) {
-          fetch('content.html')
-            .then(response => response.text())
-            .then(data => {
-              document.getElementById(itemId).innerHTML = data;
-            })
-            .catch(error => {
-              console.error('Error:', error);
-            });
-        });
+      function changeContent(itemId) {
+        fetch(itemId + '-content.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById(itemId).innerHTML = data;
+          })
+          .catch(error => {
+            console.error('Error:', error);
+          });
       }
     </script>
 
@@ -36,10 +31,19 @@
         <div class="row">
           <div class="col-md-8">
 
-            <a href="#" onclick="changeContent('item1')">test</a>
-
-            <div id="item1"></div>
-            <div id="item2"></div>
+            <a href="#" onclick="changeContent('fritzi')">
+              <img src="image.jpg" alt="Image 1">
+            </a>
+            <div id="fritzi"></div>
+          
+            <a href="#" onclick="changeContent('copernicus')">
+              <img src="image.jpg" alt="Image 2">
+            </a>
+            <div id="copernicus"></div>
+          
+            <a href="#" onclick="changeContent('item3')">
+              <img src="image.jpg" alt="Image 3">
+            </a>
             <div id="item3"></div>
 
           </div>
