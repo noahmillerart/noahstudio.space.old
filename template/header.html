@@ -1,3 +1,22 @@
+<style>
+  .menu a.active {
+    color: blue;
+    font-weight: bold;
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var currentPage = window.location.pathname;
+
+    var menuItems = document.querySelectorAll('.navbar-nav a');
+    menuItems.forEach(function(item) {
+      var itemPath = item.getAttribute('href');
+      if (itemPath === currentPage) {
+        item.classList.add('active');
+      }
+    });
+  });
+</script>
 <div class="container text-center p-5"><!--Header-->
 
   <a href="../"><img src="../img/main/LogoNS_small_color.png" alt="Logo" class="img-fluid"></a>
