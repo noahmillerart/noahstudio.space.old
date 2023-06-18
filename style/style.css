@@ -34,6 +34,10 @@ hr {
 #bio h1{
     text-align: left;
 }
+#bio img{
+    width: 120px;
+    height: 35px;
+}
 
 /** Contact **/
 #contact ul {
