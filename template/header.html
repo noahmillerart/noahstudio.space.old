@@ -8,7 +8,7 @@
             <span class="navbar-toggler-icon border-0"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-center p-3" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav mainmenu">
               <li class="nav-item">
                 <a class="nav-link" href="../about/" id="about-link">About</a>
               </li>
@@ -35,7 +35,7 @@
     <script>
       function setActiveMenuItem() {
         var currentPage = window.location.href;  // Get the current page URL
-        var menuItems = document.querySelectorAll('.menu a');  // Get all menu items
+        var menuItems = document.querySelectorAll('.mainmenu a');  // Get all menu items
 
         menuItems.forEach(function(item) {
         if (item.href === currentPage) {
