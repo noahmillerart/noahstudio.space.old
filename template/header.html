@@ -8,17 +8,17 @@
             <span class="navbar-toggler-icon border-0"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-center p-3" id="navbarNav">
-            <ul class="navbar-nav mainmenu">
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="../about/" id="about-link">About</a>
+                <a class="nav-link" href="../about/">About</a>
               </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/illustration/" id="illustration-link">Illustration</a></li>
-                        <li><a class="dropdown-item" href="/animation/" id="animation-link">Animation</a></li>
-                        <li><a class="dropdown-item" href="/design/" id="design-link">Design</a></li>
-                        <li><a class="dropdown-item" href="/technical/" id="thecnical-link">Technical Drawing</a></li>
+                        <li><a class="dropdown-item" href="/illustration/">Illustration</a></li>
+                        <li><a class="dropdown-item" href="/animation/">Animation</a></li>
+                        <li><a class="dropdown-item" href="/design/">Design</a></li>
+                        <li><a class="dropdown-item" href="/technical/">Technical Drawing</a></li>
                     </ul>
                 </li>
               <li class="nav-item">
@@ -31,21 +31,5 @@
           </div>
         </div>
     </nav>
-
-    <script>
-      function setActiveMenuItem() {
-        var currentPage = window.location.href;  // Get the current page URL
-        var menuItems = document.querySelectorAll('.mainmenu a');  // Get all menu items
-
-        menuItems.forEach(function(item) {
-        if (item.href === currentPage) {
-        item.classList.add('active');  // Add the "active" class to the matching menu item
-        }
-        });
-      }
-
-      window.addEventListener('load', setActiveMenuItem);
-
-    </script>
     
 </div><!--End Header-->

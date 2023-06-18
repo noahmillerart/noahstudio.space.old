@@ -17,11 +17,6 @@ body {
     background-color: mediumpurple;
 }
 
-.mainmenu a.active {
-    color: blue;
-    font-weight: bold;
-}
-
 /** About **/
 #testimonials img {
     border-radius: 50%;
