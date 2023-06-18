@@ -56,6 +56,20 @@ body {
     opacity: 1;
 }
 
+/** Projects **/
+
+#ido {
+    background-color: #ececec;
+    border-radius: 10px;
+}
+#ido button {
+    background-color: #58127f;
+    border-style: none;
+}
+#ido button:hover {
+    background-color: #7a1081;
+}
+
 /** Footer **/
 #footer{
     background: linear-gradient(to bottom, #7a1081, #58127f);
