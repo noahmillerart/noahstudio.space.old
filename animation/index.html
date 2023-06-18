@@ -10,14 +10,20 @@
 
     <script>
       function changeContent(itemId) {
-        fetch(itemId + '-content.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById(itemId).innerHTML = data;
-          })
-          .catch(error => {
-            console.error('Error:', error);
-          });
+        var itemDiv = document.getElementById(itemId);
+        
+        if (itemDiv.innerHTML.trim() === '') {
+          fetch(itemId + '-content.html')
+            .then(response => response.text())
+            .then(data => {
+              itemDiv.innerHTML = data;
+            })
+            .catch(error => {
+              console.error('Error:', error);
+            });
+        } else {
+          itemDiv.innerHTML = '';
+        }
       }
     </script>
 
