@@ -8,12 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link href="../style/style.css" rel="stylesheet">
     <style>
-      .carousel-item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 200px;
-      }
+
     </style>
     <script>
       var currentItem = null;
@@ -51,9 +46,11 @@
           <div class="col-md-8">
 
             <div class="p-4">
-              <a href="#" onclick="changeContent('fritzi')"><img src="image.jpg" alt="Image 1" class="img-fluid"></a>
-              <a href="#" onclick="changeContent('copernicus')"><img src="image.jpg" alt="Image 2" class="img-fluid"></a>
-              <a href="#" onclick="changeContent('immanuel')"><img src="image.jpg" alt="Image 2" class="img-fluid"></a>
+              <ul class="image-list">
+                <li><a href="#" onclick="changeContent('fritzi')"><img src="image.jpg" alt="Fritzi" class="img-fluid"></a></li>
+                <li><a href="#" onclick="changeContent('copernicus')"><img src="image.jpg" alt="Copernicus" class="img-fluid"></a></li>
+                <li><a href="#" onclick="changeContent('immanuel')"><img src="image.jpg" alt="Immanuel" class="img-fluid"></a></li>
+              </ul>
             </div>
 
             <hr>

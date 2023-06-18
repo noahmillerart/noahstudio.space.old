@@ -1,6 +1,9 @@
 body {
     background-color: ghostwhite;
 }
+hr {
+    color: rgb(196, 196, 196);
+}
 
 /** Navbar **/
 .dropdown-menu{
@@ -68,6 +71,20 @@ body {
 }
 #ido button:hover {
     background-color: #7a1081;
+}
+
+.image-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.image-list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.image-list li img {
+    max-width: 100%;
+    height: auto;
 }
 
 /** Footer **/
