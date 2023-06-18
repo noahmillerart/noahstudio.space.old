@@ -9,8 +9,14 @@
     <link href="../style/style.css" rel="stylesheet">
 
     <script>
+      var currentItem = null;
+      
       function changeContent(itemId) {
         var itemDiv = document.getElementById(itemId);
+        
+        if (currentItem !== null) {
+          document.getElementById(currentItem).innerHTML = '';
+        }
         
         if (itemDiv.innerHTML.trim() === '') {
           fetch(itemId + '-content.html')
@@ -21,9 +27,9 @@
             .catch(error => {
               console.error('Error:', error);
             });
-        } else {
-          itemDiv.innerHTML = '';
         }
+        
+        currentItem = itemId;
       }
     </script>
 
