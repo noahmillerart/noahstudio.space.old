@@ -16,7 +16,7 @@ body {
 .dropdown-item:hover{
     background-color: mediumpurple;
 }
-.navbar-nav a:active {
+.navbar-nav a.active {
     color: blue;
     font-weight: bold;
 }
