@@ -79,16 +79,14 @@ hr {
 
 .image-list {
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 .image-list li {
     display: inline-block;
-    margin-right: 10px;
 }
 .image-list li img {
     max-width: 100%;
     height: auto;
+    padding: 10px;
 }
 
 /** Footer **/
