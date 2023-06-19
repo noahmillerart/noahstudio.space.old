@@ -113,37 +113,26 @@ hr {
     font-size: xx-large;
 }
 #animacontent button{
-    background-color: #58127f;
-    border-style: none;
+        background-color: #58127f;
+        border-style: none;
 }
 #animacontent button:hover {
     background-color: #7a1081;
 }
 
-
 #gallery {
     display: flex;
     flex-wrap: wrap;
-}
-#gallery img {
-    width: 30%;
-    height: auto;
-    object-fit: contain;
-    box-sizing: border-box;
-    padding: 5px;
-}
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
   }
 
-  .gallery-item {
+  #gallery a {
     width: 25%;
     box-sizing: border-box;
     padding: 5px;
+    text-decoration: none;
   }
 
-  .gallery-item img {
+  #gallery img {
     width: 100%;
     height: auto;
     object-fit: contain;
