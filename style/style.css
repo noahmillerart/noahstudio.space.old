@@ -91,6 +91,18 @@ hr {
     opacity: 1;
 }
 
+#backtop{
+    background-color: #ececec;
+    border-radius: 5px;
+}
+#backtop a{
+    text-decoration: none;
+    color: rgb(119, 119, 119);
+}
+#backtop a:hover{
+    color: #58127f;
+}
+
 /** Footer **/
 #footer{
     background: linear-gradient(to bottom, #7a1081, #58127f);
