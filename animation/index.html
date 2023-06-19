@@ -88,6 +88,27 @@
               <div id="orientation"></div>
             </div>
 
+            <div id="popup" class="popup">
+              <div class="popup-content text-center">
+                <span class="close-button" onclick="closePopup()">Close</span>
+                <img id="popup-image" class="popup-image" src="#" alt="Popup Image">
+              </div>
+            </div>
+  
+            <script>
+              var popup = document.getElementById("popup");
+              var popupImage = document.getElementById("popup-image");
+          
+              function showPopup(imageUrl) {
+                popupImage.src = imageUrl;
+                popup.style.display = "flex";
+              }
+          
+              function closePopup() {
+                popup.style.display = "none";
+              }
+            </script>
+
             <div class="container-fluid" id="backtop">
               <div class="text-center">
                 <p><a href="#header">▲ Back to the top ▲</a></p>
