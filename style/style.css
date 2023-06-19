@@ -135,17 +135,19 @@ hr {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-}
-.gallery-item {
+  }
+
+  .gallery-item {
     width: 25%;
     box-sizing: border-box;
     padding: 5px;
-}
-.gallery-item img {
+  }
+
+  .gallery-item img {
     width: 100%;
     height: auto;
     object-fit: contain;
-}
+  }
 
 /** Footer **/
 #footer{

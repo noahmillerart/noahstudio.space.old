@@ -85,35 +85,30 @@
                   <p>For Hope Media Europe (Germany), Fritzi Fragezeichen (Fritzi Question Mark) is a character designed and animated exclusively by Noah Studio.
                     A total of 7 episodes were released in the kids Program called “Fribos Dachboden”. Fritzi is a smart girl who tries to explain difficult topics to kids.</p>
 
-                <div id="gallery" class="gallery">
-                  <img src="../img/animation/fritzi/A1.png" alt="Image 1">
-                  <img src="../img/animation/fritzi/garden.png" alt="Image 2">
-                  <img src="../img/animation/fritzi/garten_1.png" alt="Image 3">
-                  <img src="../img/animation/fritzi/img1.png" alt="Image 4">
-                  <img src="../img/animation/fritzi/park_s2_4.png" alt="Image 6">
-                  <img src="../img/animation/fritzi/room_1.png" alt="Image 7">
-                  <img src="../img/animation/fritzi/Screen Shot 2020-04-11 at 19.55.45.png" alt="Image 8">
-                  <img src="../img/animation/fritzi/vlcsnap-2021-01-11-19h00m19s982.png" alt="Image 9">
-                  <img src="../img/animation/fritzi/vlcsnap-2021-01-13-23h31m43s255.png" alt="Image 10">
-                  <img src="../img/animation/fritzi/vlcsnap-2021-01-13-23h32m03s253.png" alt="Image 11">
-                  <img src="../img/animation/fritzi/fritzi_total.png" alt="Image 5">
-                </div>
+                    <div class="gallery" id="gallery">
+                      <a href="../img/animation/fritzi/A1.png" class="image-link"><img src="../img/animation/fritzi/A1.png" alt="Image 1"></a>
+                      <a href="../img/animation/fritzi/garden.png" class="image-link"><img src="../img/animation/fritzi/garden.png" alt="Image 2"></a>
+                      <a href="../img/animation/fritzi/garten_1.png" class="image-link"><img src="../img/animation/fritzi/garten_1.png" alt="Image 3"></a>
+                      <a href="../img/animation/fritzi/img1.png" class="image-link"><img src="../img/animation/fritzi/img1.png" alt="Image 4"></a>
+                      <a href="../img/animation/fritzi/park_s2_4.png" class="image-link"><img src="../img/animation/fritzi/park_s2_4.png" alt="Image 6"></a>
+                      <a href="../img/animation/fritzi/room_1.png" class="image-link"><img src="../img/animation/fritzi/room_1.png" alt="Image 7"></a>
+                      <a href="../img/animation/fritzi/Screen Shot 2020-04-11 at 19.55.45.png" class="image-link"><img src="../img/animation/fritzi/Screen Shot 2020-04-11 at 19.55.45.png" alt="Image 8"></a>
+                      <a href="../img/animation/fritzi/vlcsnap-2021-01-11-19h00m19s982.png" class="image-link"><img src="../img/animation/fritzi/vlcsnap-2021-01-11-19h00m19s982.png" alt="Image 9"></a>
+                      <a href="../img/animation/fritzi/vlcsnap-2021-01-13-23h31m43s255.png" class="image-link"><img src="../img/animation/fritzi/vlcsnap-2021-01-13-23h31m43s255.png" alt="Image 10"></a>
+                      <a href="../img/animation/fritzi/vlcsnap-2021-01-13-23h32m03s253.png" class="image-link"><img src="../img/animation/fritzi/vlcsnap-2021-01-13-23h32m03s253.png" alt="Image 11"></a>
+                      <a href="../img/animation/fritzi/fritzi_total.png" class="image-link"><img src="../img/animation/fritzi/fritzi_total.png" alt="Image 5"></a>
+                    </div>
 
-                <script>
-                  $(document).ready(function() {
-                    $('#gallery img').each(function() {
-                      var imageSrc = $(this).attr('src');
-                      $(this).wrap('<a href="' + imageSrc + '" class="image-link"></a>');
-                    });
-              
-                    $('.image-link').magnificPopup({
-                      type: 'image',
-                      gallery: {
-                        enabled: true
-                      }
-                    });
-                  });
-                </script>
+                    <script>
+                      $(document).ready(function() {
+                        $('.image-link').magnificPopup({
+                          type: 'image',
+                          gallery: {
+                            enabled: true
+                          }
+                        });
+                      });
+                    </script>
 
               </div>
               <div class="col-md-4 text-center pb-5">
