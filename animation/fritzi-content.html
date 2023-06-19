@@ -1,0 +1,49 @@
+<div class="row" id="animacontent">
+    <div class="col-md-8">
+        <h1 class="display-6">Fritzi Fragezeichen</h1>
+        <p>For Hope Media Europe (Germany), Fritzi Fragezeichen (Fritzi Question Mark) is a character designed and animated exclusively by Noah Studio.
+          A total of 7 episodes were released in the kids Program called “Fribos Dachboden”. Fritzi is a smart girl who tries to explain difficult topics to kids.</p>
+
+          <div id="gallery">
+            <a href="#" onclick="showPopup('../img/animation/fritzi/A1.png'); return false;"><img src="../img/animation/fritzi/A1.png" alt="Image 1"></a>
+            <a href="#" onclick="showPopup('../img/animation/fritzi/garden.png'); return false;"><img src="../img/animation/fritzi/garden.png" alt="Image 2"></a>
+            <a href="#" onclick="showPopup('../img/animation/fritzi/garten_1.png'); return false;"><img src="../img/animation/fritzi/garten_1.png" alt="Image 3"></a>
+            <a href="#" onclick="showPopup('../img/animation/fritzi/img1.png'); return false;"><img src="../img/animation/fritzi/img1.png" alt="Image 4"></a>
+            <a href="#" onclick="showPopup('../img/animation/fritzi/fritzi_total.png'); return false;"><img src="../img/animation/fritzi/fritzi_total.png" alt="Image 5"></a>
+            <a href="#" onclick="showPopup('../img/animation/fritzi/park_s2_4.png'); return false;"><img src="../img/animation/fritzi/park_s2_4.png" alt="Image 6"></a>
+            <a href="#" onclick="showPopup('../img/animation/fritzi/room_1.png'); return false;"><img src="../img/animation/fritzi/room_1.png" alt="Image 7"></a>
+            <a href="#" onclick="showPopup('../img/animation/fritzi/Screen Shot 2020-04-11 at 19.55.45.png'); return false;"><img src="../img/animation/fritzi/Screen Shot 2020-04-11 at 19.55.45.png" alt="Image 8"></a>
+            <a href="#" onclick="showPopup('../img/animation/fritzi/vlcsnap-2021-01-11-19h00m19s982.png'); return false;"><img src="../img/animation/fritzi/vlcsnap-2021-01-11-19h00m19s982.png" alt="Image 9"></a>
+            <a href="#" onclick="showPopup('../img/animation/fritzi/vlcsnap-2021-01-13-23h31m43s255.png'); return false;"><img src="../img/animation/fritzi/vlcsnap-2021-01-13-23h31m43s255.png" alt="Image 10"></a>
+            <a href="#" onclick="showPopup('../img/animation/fritzi/vlcsnap-2021-01-13-23h32m03s253.png'); return false;"><img src="../img/animation/fritzi/vlcsnap-2021-01-13-23h32m03s253.png" alt="Image 11"></a>
+          </div>
+
+          <div id="popup" class="popup">
+            <div class="popup-content text-center">
+              <span class="close-button" onclick="closePopup()">Close</span>
+              <img id="popup-image" class="popup-image" src="#" alt="Popup Image">
+            </div>
+          </div>
+
+          <script>
+            var popup = document.getElementById("popup");
+            var popupImage = document.getElementById("popup-image");
+        
+            function showPopup(imageUrl) {
+              popupImage.src = imageUrl;
+              popup.style.display = "flex";
+            }
+        
+            function closePopup() {
+              popup.style.display = "none";
+            }
+          </script>
+
+    </div>
+    <div class="col-md-4 text-center pb-5">
+      <div class="poster pb-4">
+        <img src="../img/animation/posters/PosterFritzi.png" class="img-fluid">
+      </div>
+        <button type="button" class="btn btn-secondary btn-sm">Watch on YouTube</button>
+    </div>
+</div>
