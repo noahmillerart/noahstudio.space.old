@@ -18,7 +18,7 @@
         <a href="#" onclick="showPopup('../img/animation/fritzi/vlcsnap-2021-01-13-23h32m03s253.png'); return false;"><img src="../img/animation/fritzi/vlcsnap-2021-01-13-23h32m03s253.png" alt="Image 10"></a>
     </div>
 
-    <h6>re-design</h6>
+    <h6 class="py-2">re-design</h6>
 
     <div id="gallery">
         <a href="#" onclick="showPopup('../img/animation/fritzi/Fritzi_v2_front.png'); return false;"><img src="../img/animation/fritzi/Fritzi_v2_front.png" alt="Image 11"></a>
@@ -38,24 +38,3 @@
 
   </div>
 </div>
-
-<div id="popup" class="popup">
-  <div class="popup-content text-center">
-    <span class="close-button" onclick="closePopup()">Close</span>
-    <img id="popup-image" class="popup-image" src="#" alt="Popup Image">
-  </div>
-</div>
-
-<script>
-  var popup = document.getElementById("popup");
-  var popupImage = document.getElementById("popup-image");
-
-  function showPopup(imageUrl) {
-    popupImage.src = imageUrl;
-    popup.style.display = "flex";
-  }
-
-  function closePopup() {
-    popup.style.display = "none";
-  }
-</script>
