@@ -11,6 +11,7 @@ hr {
     width: 100%; /* Adjust the container width as needed */
     height: 250px; /* Adjust the container height as needed */
     overflow: hidden;
+    background-color: #58127f;
   }
   
   #image-mask {
