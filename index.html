@@ -74,7 +74,7 @@ $(document).ready(function() {
     totalWidth += $currentImage.outerWidth();
     
     if (totalWidth > containerWidth) {
-      $('#image-container').animate({marginLeft: -totalWidth}, 10000, 'linear', function() {
+      $('#image-container').animate({marginLeft: -totalWidth}, 100000, 'linear', function() {
         $(this).css({marginLeft: 0});
         $currentImage.remove();
         totalWidth -= $currentImage.outerWidth();
