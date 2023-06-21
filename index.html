@@ -13,33 +13,18 @@
 
       <div class="header"></div>
 
-      <div id="mainbanner">
-        <img src="/img/animation/cevisa/cevisa12.png">
-        <img src="/img/animation/copernicus/Cop5.png">
-        <img src="/img/animation/fritzi/vlcsnap-2021-01-11-19h00m19s982.png">
-        <img src="/img/animation/grow/grow4.png">
-        <img src="/img/animation/vision/vision3.png">
-        <img src="/img/animation/immanuel/imma14.png">
-        <img src="/img/animation/cevisa/cevisa12.png">
-        <img src="/img/animation/copernicus/Cop5.png">
-        <img src="/img/animation/fritzi/vlcsnap-2021-01-11-19h00m19s982.png">
-        <img src="/img/animation/grow/grow4.png">
-        <img src="/img/animation/vision/vision3.png">
-        <img src="/img/animation/immanuel/imma14.png">
-        <img src="/img/animation/cevisa/cevisa12.png">
-        <img src="/img/animation/copernicus/Cop5.png">
-        <img src="/img/animation/fritzi/vlcsnap-2021-01-11-19h00m19s982.png">
-        <img src="/img/animation/grow/grow4.png">
-        <img src="/img/animation/vision/vision3.png">
-        <img src="/img/animation/immanuel/imma14.png">
-        <img src="/img/animation/cevisa/cevisa12.png">
-        <img src="/img/animation/copernicus/Cop5.png">
-        <img src="/img/animation/fritzi/vlcsnap-2021-01-11-19h00m19s982.png">
-        <img src="/img/animation/grow/grow4.png">
-        <img src="/img/animation/vision/vision3.png">
-        <img src="/img/animation/immanuel/imma14.png">
-      </div>
-      
+      <div id="container">
+        <div id="image-mask">
+          <div id="image-container">
+            <img src="/img/animation/cevisa/cevisa11.png">
+            <img src="img/animation/grow/grow4.png">
+            <img src="/img/animation/cevisa/cevisa14.png">
+            <img src="img/animation/grow/grow2.png">
+            <img src="/img/animation/cevisa/cevisa10.png">
+            <img src="img/animation/grow/grow1.png">
+          </div>
+        </div>
+      </div>         
 
     </div> <!-- End Main Container -->
 
@@ -77,29 +62,35 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script>
 $(document).ready(function() {
-  // Calculate the total width of the images
+  var containerWidth = $('#container').width();
   var totalWidth = 0;
-  $('#mainbanner img').each(function() {
-    totalWidth += $(this).outerWidth();
-  });
-
-  // Clone the images and append them to the container
-  $('#mainbanner img').clone().appendTo('#mainbanner');
-
-  // Set the container width to accommodate all images
-  $('#mainbanner').css('width', totalWidth * 2);
-
-  // Animate the container to create the looping effect
-  function loopImages() {
-    $('#mainbanner').animate({marginLeft: -totalWidth}, 80000, 'linear', function() {
-      $(this).css({marginLeft: 0});
-      loopImages();
-    });
+  var imageIndex = 0;
+  
+  function loadImages() {
+    var $currentImage = $('#image-container img').eq(imageIndex);
+    var $clonedImage = $currentImage.clone();
+    
+    $clonedImage.appendTo('#image-container');
+    totalWidth += $currentImage.outerWidth();
+    
+    if (totalWidth > containerWidth) {
+      $('#image-container').animate({marginLeft: -totalWidth}, 10000, 'linear', function() {
+        $(this).css({marginLeft: 0});
+        $currentImage.remove();
+        totalWidth -= $currentImage.outerWidth();
+        loadImages();
+      });
+    } else {
+      imageIndex++;
+      if (imageIndex >= $('#image-container img').length) {
+        imageIndex = 0;
+      }
+      loadImages();
+    }
   }
-
-  loopImages();
+  
+  loadImages();
 });
-
           </script>
   </body>
 </html>
