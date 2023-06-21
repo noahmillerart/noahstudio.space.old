@@ -14,11 +14,15 @@ hr {
   
   #image-container {
     display: flex;
+    margin: 0;
+    padding: 0;
   }
   
   #image-container img {
-    width: 100%;
-    height: auto;
+    width: 1200px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
   }
   
 
