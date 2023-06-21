@@ -9,19 +9,22 @@
     <link href="/style/style.css" rel="stylesheet">
 
     <script>
-      $(document).ready(function() {
+$(document).ready(function() {
   // Calculate the total width of the images
   var totalWidth = 0;
-  $('#image-container img').each(function() {
+  $('#mainbanner img').each(function() {
     totalWidth += $(this).outerWidth();
   });
 
+  // Set the container width to accommodate all images
+  $('#mainbanner').css('width', totalWidth);
+
   // Clone the images and append them to the container
-  $('#image-container img').clone().appendTo('#image-container');
+  $('#mainbanner img').clone().appendTo('#mainbanner');
 
   // Animate the container to create the looping effect
   function loopImages() {
-    $('#image-container').animate({marginLeft: -totalWidth}, 10000, 'linear', function() {
+    $('#mainbanner').animate({marginLeft: -totalWidth}, 10000, 'linear', function() {
       $(this).css({marginLeft: 0});
       loopImages();
     });

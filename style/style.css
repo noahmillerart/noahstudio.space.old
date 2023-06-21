@@ -14,8 +14,8 @@ hr {
   
   #mainbanner img {
     display: inline-block;
-    width: 100px; /* Adjust the width as per your needs */
-    height: auto; /* Maintain aspect ratio */
+    width: 150px; /* Adjust the width as per your needs */
+    height: 120px; /* Maintain aspect ratio */
   }
   
 
