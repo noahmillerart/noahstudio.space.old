@@ -19,9 +19,6 @@
         <div id="image-mask" class="container-fluid p-0">
           <div id="image-container" class="container-fluid p-0">
             <img src="img/animation/grow/grow2.png">
-            <img src="/img/animation/cevisa/cevisa10.png">
-            <img src="img/animation/grow/grow1.png">
-            <img src="img/animation/grow/grow6.png">
           </div>
           </div>
         </div>
@@ -63,15 +60,14 @@
 $(document).ready(function() {
   var containerWidth = $('#container').width();
   var totalWidth = 0;
-  var imageIndex = 0;
-  
+
   function loadImages() {
-    var $currentImage = $('#image-container img').eq(imageIndex);
+    var $currentImage = $('#image-container img');
     var $clonedImage = $currentImage.clone();
-    
+
     $clonedImage.appendTo('#image-container');
     totalWidth += $currentImage.outerWidth();
-    
+
     if (totalWidth > containerWidth) {
       $('#image-container').animate({marginLeft: -totalWidth}, 60000, 'linear', function() {
         $(this).css({marginLeft: 0});
@@ -80,14 +76,10 @@ $(document).ready(function() {
         loadImages();
       });
     } else {
-      imageIndex++;
-      if (imageIndex >= $('#image-container img').length) {
-        imageIndex = 0;
-      }
       loadImages();
     }
   }
-  
+
   loadImages();
 });
           </script>
