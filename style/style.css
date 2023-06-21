@@ -10,12 +10,13 @@ hr {
 #mainbanner {
     white-space: nowrap; /* Prevent images from wrapping */
     overflow: hidden; /* Hide overflowing images */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
   }
   
   #mainbanner img {
     display: inline-block;
-    width: 250px; /* Adjust the width as per your needs */
-    height: 200px; /* Maintain aspect ratio */
+    width: 400px; /* Adjust width automatically based on aspect ratio */
+    height: 300px; /* Set a specific height of 120 pixels for the images */
   }
   
 
