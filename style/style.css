@@ -5,6 +5,20 @@ hr {
     color: rgb(196, 196, 196);
 }
 
+/** Home **/
+
+#mainbanner {
+    white-space: nowrap; /* Prevent images from wrapping */
+    overflow: hidden; /* Hide overflowing images */
+  }
+  
+  #mainbanner img {
+    display: inline-block;
+    width: 100px; /* Adjust the width as per your needs */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+
 /** Navbar **/
 .dropdown-menu{
     background-color: rgba(241, 231, 250, 0.952);
