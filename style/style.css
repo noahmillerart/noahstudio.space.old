@@ -9,7 +9,7 @@ hr {
 
 #container {
     width: 100%; /* Adjust the container width as needed */
-    height: 50%; /* Adjust the container height as needed */
+    height: 250px; /* Adjust the container height as needed */
     overflow: hidden;
   }
   
