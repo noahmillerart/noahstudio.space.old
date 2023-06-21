@@ -13,6 +13,7 @@ hr {
     overflow: hidden;
     background-color: #58127f;
     padding: 0;
+    margin: 0;
   }
   
   #image-mask {
@@ -21,6 +22,7 @@ hr {
     position: relative;
     overflow: hidden;
     padding: 0;
+    margin: 0;
   }
   
   #image-container {
@@ -31,6 +33,7 @@ hr {
     bottom: 0;
     white-space: nowrap;
     padding: 0;
+    margin: 0;
   }
   
   #image-container img {
@@ -38,6 +41,7 @@ hr {
     width: auto;
     height: 250px;
     padding: 0;
+    margin: 0;
   }
   
   
