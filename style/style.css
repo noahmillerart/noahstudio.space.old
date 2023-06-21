@@ -8,8 +8,8 @@ hr {
 /** Home **/
 
 #container {
-    width: 100%; /* Adjust the container width as needed */
-    height: 250px; /* Adjust the container height as needed */
+    width: 100%;
+    height: 250px;
     overflow: hidden;
   }
   
