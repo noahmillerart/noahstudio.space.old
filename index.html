@@ -59,7 +59,6 @@
     <script>
 $(document).ready(function() {
   var containerWidth = $('#container').width();
-  var imageWidth = $('#image-container img').outerWidth();
   var totalWidth = 0;
 
   function loadImages() {
@@ -70,14 +69,12 @@ $(document).ready(function() {
     totalWidth += $currentImage.outerWidth();
 
     if (totalWidth > containerWidth) {
-      if (totalWidth - containerWidth <= $currentImage.position().left) {
-        $('#image-container').animate({marginLeft: -(totalWidth - containerWidth)}, 50000, 'linear', function() {
-          $(this).css({marginLeft: 0});
-          $currentImage.remove();
-          totalWidth -= $currentImage.outerWidth();
-          loadImages();
-        });
-      }
+      $('#image-container').animate({marginLeft: -totalWidth}, 60000, 'linear', function() {
+        $(this).css({marginLeft: 0});
+        $currentImage.remove();
+        totalWidth -= $currentImage.outerWidth();
+        loadImages();
+      });
     } else {
       loadImages();
     }
