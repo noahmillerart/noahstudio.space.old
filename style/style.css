@@ -105,12 +105,13 @@ hr {
     background-color: #7a1081;
 }
 
-.select {
-    background-color: #58127f;
+#thumbnails img{
+    opacity: 0.7;
 }
 .selected img {
-    border: 2px solid rgb(0, 0, 0);
-    opacity: 0.6;
+    border: 1px solid rgb(0, 0, 0);
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+    opacity: 1 !important;
 }
 
 #backtop{
