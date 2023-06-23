@@ -105,13 +105,10 @@ hr {
     background-color: #7a1081;
 }
 
-#posters img{
-    border-radius: 5px;
+#thumbnails img{
     opacity: 0.7;
-    width: 100px;
-    height: auto;
 }
-#posters img:hover{
+#thumbnails img:hover{
     opacity: 1;
 }
 
