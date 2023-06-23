@@ -162,6 +162,16 @@ hr {
     object-fit: contain;
 }
 
+.masonry {
+    display: grid;
+    grid-gap: 10px;
+  }
+  
+  .item {
+    width: 100%;
+  }  
+   
+
 /* Popup styles */
 .popup {
     display: none;
