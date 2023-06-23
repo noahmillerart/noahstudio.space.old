@@ -108,6 +108,9 @@ hr {
 #thumbnails img{
     opacity: 0.7;
 }
+#thumbnails img:hover{
+    opacity: 1;
+}
 .selected img {
     border: 1px solid rgb(0, 0, 0);
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
