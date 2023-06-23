@@ -74,50 +74,11 @@
 
             <h1 class="display-6">More than a Miracle</h1>
 
-            <div class="masonry">
-              <div class="item">
-                <img src="../img/illustration/morethanamiracle/1.png" alt="Image 1">
+            <div class="masonry-container">
+              <div class="masonry-item">
+                <a href="#" onclick="showPopup('../img/animation/copernicus/Cop1.png'); return false;"><img src="../img/animation/copernicus/Cop1.png" alt="Image 1"></a>
               </div>
-              <div class="item">
-                <img src="../img/illustration/morethanamiracle/2.png" alt="Image 2">
-              </div>
-              <div class="item">
-                <img src="../img/illustration/morethanamiracle/3.png" alt="Image 2">
-              </div>
-              <div class="item">
-                <img src="../img/illustration/morethanamiracle/4.png" alt="Image 2">
-              </div>
-              <div class="item">
-                <img src="../img/illustration/morethanamiracle/1.png" alt="Image 1">
-              </div>
-              <div class="item">
-                <img src="../img/illustration/morethanamiracle/2.png" alt="Image 2">
-              </div>
-              <div class="item">
-                <img src="../img/illustration/morethanamiracle/3.png" alt="Image 2">
-              </div>
-              <div class="item">
-                <img src="../img/illustration/morethanamiracle/4.png" alt="Image 2">
-              </div>
-              <div class="item">
-                <img src="../img/illustration/morethanamiracle/1.png" alt="Image 1">
-              </div>
-              <div class="item">
-                <img src="../img/illustration/morethanamiracle/2.png" alt="Image 2">
-              </div>
-              <div class="item">
-                <img src="../img/illustration/morethanamiracle/3.png" alt="Image 2">
-              </div>
-              <div class="item">
-                <img src="../img/illustration/morethanamiracle/4.png" alt="Image 2">
-              </div>
-            </div>
-            
-
-
-
-
-
+            </div>            
 
           </div>
 
@@ -164,35 +125,27 @@
 
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    <div id="popup" class="popup container-fluid">
+      <div class="popup-content text-center container-fluid">
+        <span class="close-button" onclick="closePopup()">Close</span>
+        <img id="popup-image" class="popup-image" src="#" alt="Popup Image">
+      </div>
+    </div>
+    
     <script>
-      window.addEventListener('load', function() {
-  var container = document.getElementById('masonry-container');
-  var items = container.getElementsByClassName('item');
-
-  function calculateMasonry() {
-    var colWidth = items[0].offsetWidth + 10; // Add gap
-    var numCols = Math.floor(container.offsetWidth / colWidth);
-
-    var colHeights = new Array(numCols).fill(0);
-    for (var i = 0; i < items.length; i++) {
-      var item = items[i];
-      var colIndex = i % numCols;
-      var colHeight = colHeights[colIndex];
-
-      item.style.position = 'absolute';
-      item.style.left = colIndex * colWidth + 'px';
-      item.style.top = colHeight + 'px';
-
-      colHeights[colIndex] += item.offsetHeight + 10; // Add gap
-    }
-
-    container.style.height = Math.max(...colHeights) + 'px';
-  }
-
-  calculateMasonry();
-  window.addEventListener('resize', calculateMasonry);
-});
-
+      var popup = document.getElementById("popup");
+      var popupImage = document.getElementById("popup-image");
+    
+      function showPopup(imageUrl) {
+        popupImage.src = imageUrl;
+        popup.style.display = "flex";
+      }
+    
+      function closePopup() {
+        popup.style.display = "none";
+      }
     </script>
+
   </body>
 </html>

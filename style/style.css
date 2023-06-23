@@ -162,15 +162,17 @@ hr {
     object-fit: contain;
 }
 
-.masonry {
-    display: grid;
-    grid-gap: 10px;
+.masonry-container {
+    column-count: 4; /* Adjust the number of columns as needed */
+    column-gap: 10px; /* Adjust the gap between items as needed */
   }
   
-  .item {
+  .masonry-item {
+
     width: 100%;
+    margin-bottom: 10px; /* Adjust the bottom margin as needed */
   }  
-   
+  
 
 /* Popup styles */
 .popup {
