@@ -9,14 +9,25 @@
     <link href="../style/style.css" rel="stylesheet">
     <script>
       var currentItem = null;
-      
+
       function changeContent(itemId) {
-        var itemDiv = document.getElementById(itemId);
-        
+        var itemLink = document.querySelector('[href="#' + itemId + '"]');
+        var itemThumbnail = itemLink.parentElement;
+
         if (currentItem !== null) {
-          document.getElementById(currentItem).innerHTML = '';
+          var currentItemDiv = document.getElementById(currentItem);
+          currentItemDiv.innerHTML = '';
+          var currentLink = document.querySelector('[href="#' + currentItem + '"]');
+          var currentThumbnail = currentLink.parentElement;
+          currentThumbnail.classList.remove('selected');
         }
-        
+
+        itemThumbnail.classList.add('selected');
+
+        currentItem = itemId;
+
+        var itemDiv = document.getElementById(itemId);
+
         if (itemDiv.innerHTML.trim() === '') {
           fetch(itemId + '-content.html')
             .then(response => response.text())
@@ -27,8 +38,6 @@
               console.error('Error:', error);
             });
         }
-        
-        currentItem = itemId;
       }
     </script>
   </head>
