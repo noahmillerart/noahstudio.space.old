@@ -105,12 +105,6 @@ hr {
     background-color: #7a1081;
 }
 
-#thumbnails img{
-    opacity: 0.8;
-}
-#thumbnails img:hover{
-    opacity: 1;
-}
 .select {
     background-color: #58127f;
 }
