@@ -146,6 +146,9 @@ hr {
 #illustracontent h1{
     font-size: xx-large;
 }
+#designcontent h1{
+    font-size: xx-large; 
+}
 
 #gallery {
     display: flex;
