@@ -91,6 +91,10 @@ hr {
 #contact img:hover{
     opacity: 1;
 }
+#contact_tag{
+    border-radius: 15px;
+    border: 1px solid #ececec;
+}
 
 /** Projects **/
 #ido {
