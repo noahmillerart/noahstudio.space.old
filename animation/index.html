@@ -49,7 +49,7 @@
       }
 
       window.addEventListener('DOMContentLoaded', function() {
-  changeContent('copernicus');
+  changeContent('daniel');
 });
     </script>
   </head>
@@ -67,6 +67,9 @@
 
               <div class="row text-center">
                 <div class="col p-2">
+                  <a href="#daniel" onclick="changeContent('daniel')"><img src="../img/animation/posters/PosterDaniel.png" alt="Daniel" class="img-fluid"></a>
+                </div>
+                <div class="col p-2">
                   <a href="#copernicus" onclick="changeContent('copernicus')"><img src="../img/animation/posters/PosterCopernicus.png" alt="Copernicus" class="img-fluid"></a>
                 </div>
                 <div class="col p-2">
@@ -78,16 +81,14 @@
                 <div class="col p-2">
                   <a href="#thevision" onclick="changeContent('thevision')"><img src="../img/animation/posters/PosterVision.png" alt="The Vision" class="img-fluid"></a>
                 </div>
-                <div class="col p-2">
-                  <a href="#grow" onclick="changeContent('grow')"><img src="../img/animation/posters/PosterGrow.png" alt="Grow in Discipleship" class="img-fluid"></a>
-                </div>
               </div>
 
               <div class="row text-center">
                 <div class="col p-2">
                   <a href="#orientation" onclick="changeContent('orientation')"><img src="../img/animation/posters/PosterCevisa.png" alt="Orientation to Users" class="img-fluid"></a>
                 </div>
-                <div class="col">
+                <div class="col p-2">
+                  <a href="#grow" onclick="changeContent('grow')"><img src="../img/animation/posters/PosterGrow.png" alt="Grow in Discipleship" class="img-fluid"></a>
                 </div>
                 <div class="col">
                 </div>
@@ -102,6 +103,7 @@
             <hr>
 
             <div class="p-2">
+              <div id="daniel"></div>
               <div id="fritzi"></div>
               <div id="copernicus"></div>
               <div id="immanuel"></div>
