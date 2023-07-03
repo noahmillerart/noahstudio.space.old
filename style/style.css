@@ -25,6 +25,10 @@ hr {
     padding: 0;
   }
 
+  #whatido {
+    background-color: #ececec;
+  }
+
 #whatido img {
     border-radius: 50%;
     opacity: 0.7;
