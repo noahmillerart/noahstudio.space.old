@@ -73,6 +73,54 @@ hr {
     height: 35px;
 }
 
+#skills {
+    background-color: #ececec;
+  }
+  #skills span{
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .skillitem{
+    width: 100px;
+    display: inline-block;
+  }
+  .progress {
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+  }
+  .p-20 {
+    background-image: url(../img/about/progress_20.png);
+  }
+  .p-30 {
+    background-image: url(../img/about/progress_30.png);
+  }
+  .p-40 {
+    background-image: url(../img/about/progress_40.png);
+  }
+  .p-50 {
+    background-image: url(../img/about/progress_50.png);
+  }
+  .p-60 {
+    background-image: url(../img/about/progress_60.png);
+  }
+  .p-70 {
+    background-image: url(../img/about/progress_70.png);
+  }
+  .p-80 {
+    background-image: url(../img/about/progress_80.png);
+  }
+  .p-90 {
+    background-image: url(../img/about/progress_90.png);
+  }
+  .p-100 {
+    background-image: url(../img/about/progress_100.png);
+  }
+
 /** Contact **/
 #contact ul {
     list-style: none;
