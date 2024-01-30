@@ -68,11 +68,10 @@ hr {
 #bio h1{
     text-align: left;
 }
-#bio img{
+.signature {
     width: 120px;
     height: 35px;
 }
-
 #skills {
     background-color: #ececec;
   }
@@ -126,6 +125,15 @@ hr {
   .p-100 {
     background-image: url(../img/about/progress_100.png);
   }
+
+.imglink img{
+    width: 25px;
+    height: 25px;
+    opacity: 0.7;
+}
+.imglink img:hover{
+    opacity: 1;
+}
 
 /** Contact **/
 #contact ul {
